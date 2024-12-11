@@ -32,7 +32,14 @@ body {
 }
 
 /* bottone upgrade */
-.pill {}
+.pill {
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+    font-size: xx-small;
+
+}
 
 .square {
     width: 40px;
@@ -126,15 +133,6 @@ ul.playlist {
     align-items: center;
 }
 
-.btn {
-    border: 1px solid white;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    margin-right: 1rem;
-    font-size: xx-small;
-
-}
-
 .linktree {
 
     display: flex;
@@ -160,4 +158,14 @@ ul.playlist {
 .player {
     height: 10vh;
     background-color: #282828;
+
+
+    /* ----BONUS----- 
+    :hover su linktree e sidebar con shadowbox
+    :hover ingrandimento bottone UPGRADE
+    :hover position absolute transform: traslate (-50%, -50%);
+    del playbutton su sfondo opaco in z-index: 1;
+    :hover cambio colore barra avanzamento track 
+    (<input type="range" name="track" min="0" max="50">)
+    */
 }
