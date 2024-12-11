@@ -1,1 +1,13 @@
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+    .sidebar {
+        flex-basis: 25%;
+        font-size: 1.2rem;
+    }
+
+    .overflow {
+        flex-basis: 75%;
+    }
+
+
+}

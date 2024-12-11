@@ -1,12 +1,14 @@
 @media screen and (min-width: 768px) {
 
 
-    /* -----SIDEBAR------ */
     .sidebar {
         flex-basis: 30%;
+        font-size: 1.1rem;
     }
 
     .overflow {
         flex-basis: 70%;
     }
+
+
 }
