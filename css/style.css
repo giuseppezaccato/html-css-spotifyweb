@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+}
+
+:root {
+    --color1: #787B7F;
+
+}
+
+.main {
+    display: flex;
+    height: 90vh;
+}
+
+/* -----UTILITY----- */
+.rounded {
+    border-radius: 50%;
+}
+
+.square {
+    width: 20px;
+    aspect-ratio: 1;
+}
+
+.grey {
+    background-color: var(--color1);
+}
+
+
+/* -----SIDEBAR------ */
+.sidebar {
+    background-color: #000000;
+    padding-left: 1rem;
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    column-gap: 5rem;
+
+    justify-content: space-between;
+    color: var(--color1);
+    font-size: 1rem;
+    flex-basis: 10%;
+}
+
+.sidebar img:not(#logo) {
+    width: 2rem;
+}
+
+#logo {
+    display: none;
+    max-width: 8rem;
+}
+
+
+.sidefooter hr {
+    max-width: 85%;
+}
+
+.install {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* -----OVERFLOW----- */
+.overflow {
+    flex-basis: 90%;
+    overflow: auto;
+}
+
+.topbar {
+    height: 10vh;
+    background-color: rgba(8, 11, 18, 0.9);
+    position: sticky;
+    top: 0;
+}
