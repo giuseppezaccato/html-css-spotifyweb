@@ -1,9 +1,12 @@
 body {
     font-family: sans-serif;
+    font-weight: 600;
 }
 
 :root {
     --color1: #787B7F;
+    --color2: #141922;
+    --color3: #ADFF2F;
 
 }
 
@@ -13,13 +16,22 @@ body {
 }
 
 /* -----UTILITY----- */
+
+.hidden {
+    display: none;
+}
+
 .rounded {
     border-radius: 50%;
 }
 
 .square {
-    width: 20px;
+    width: 40px;
     aspect-ratio: 1;
+}
+
+.white {
+    color: white;
 }
 
 .grey {
@@ -30,20 +42,18 @@ body {
 /* -----SIDEBAR------ */
 .sidebar {
     background-color: #000000;
-    padding-left: 1rem;
     padding-block: 1rem;
     display: flex;
     flex-direction: column;
-    column-gap: 5rem;
-
     justify-content: space-between;
+    align-items: center;
     color: var(--color1);
     font-size: 1rem;
     flex-basis: 10%;
 }
 
 .sidebar img:not(#logo) {
-    width: 2rem;
+    width: 1.5rem;
 }
 
 #logo {
@@ -51,21 +61,49 @@ body {
     max-width: 8rem;
 }
 
-
-.sidefooter hr {
-    max-width: 85%;
+.fa-plus {
+    color: #000000;
+    font-size: 2rem;
 }
 
-.install {
+
+.playlist {
+    display: none;
+}
+
+.newplaylist {
+    display: flex;
+    align-items: center;
+
+}
+
+.square.grey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidefooter:not(hr) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 2px;
+}
+
+.sidefooter hr {
+    max-width: 100%;
+}
+
+.install,
+.profile {
     display: flex;
     align-items: center;
     gap: 2px;
 
 }
 
-.hidden {
-    display: none;
-}
+
 
 
 /* -----OVERFLOW----- */
