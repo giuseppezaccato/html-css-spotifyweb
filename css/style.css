@@ -112,12 +112,13 @@ ul.playlist {
 .overflow {
     flex-basis: 90%;
     overflow: auto;
-    background-color: var(--color2);
+    background: rgb(120, 123, 127);
+    background: linear-gradient(0deg, rgba(120, 123, 127, 1) 36%, rgba(173, 255, 47, 0.35898109243697474) 100%);
 }
 
 .topbar {
     height: 10vh;
-    background-color: rgba(8, 11, 18, 0.9);
+    background-color: rgba(8, 11, 18, 0.8);
     position: sticky;
     top: 0;
     display: flex;
@@ -132,4 +133,31 @@ ul.playlist {
     margin-right: 1rem;
     font-size: xx-small;
 
+}
+
+.linktree {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    color: var(--color1);
+    text-transform: uppercase;
+    font-size: x-small;
+    font-weight: 700;
+
+}
+
+.linktree>div {
+    flex-basis: auto;
+    padding: 0.6rem;
+
+}
+
+/* -----FOOTER/PLAYER----- */
+.player {
+    height: 10vh;
+    background-color: #282828;
 }
