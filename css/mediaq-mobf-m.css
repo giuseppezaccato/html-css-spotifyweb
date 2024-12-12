@@ -10,6 +10,16 @@
         flex-basis: 70%;
     }
 
+    .track {
+        width: 300px;
+    }
+
+    .player {
+        font-size: medium;
+    }
+
+
+
 
 
 }

@@ -39,7 +39,21 @@
         font-size: small;
     }
 
+    .card {
+        flex-basis: calc(100% / 3 - 10px);
+    }
 
+    .i-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
 
+    }
 
-}
+    .i-container>a {
+        color: white;
+    }
+
+    .track {
+        width: 200px;
+    }

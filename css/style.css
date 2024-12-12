@@ -6,7 +6,7 @@ body {
 :root {
     --color1: #787B7F;
     --color2: #141922;
-    --color3: #ADFF2F;
+    --color3: #adff2f;
     --color4: #282828;
 
 
@@ -169,7 +169,7 @@ img[alt="profile icon"] {
 }
 
 .card {
-    max-width: 160px;
+    flex-basis: calc(100% / 2 - 10px);
     text-align: center;
     font-size: 0.8rem;
 }
@@ -193,22 +193,110 @@ h2 {
     margin-block: 20px;
 }
 
-
-
-
-
 /* -----PLAYER----- */
 .player {
+    display: flex;
     height: 10vh;
     background-color: var(--color4);
+    color: white;
+    font-size: x-small;
+    justify-content: space-between;
+
+}
 
 
-    /* ----BONUS----- 
+
+.left,
+.center,
+.right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* flex-basis: calc(100% / 3); */
+
+}
+
+.right,
+.left {
+    flex-basis: 15%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.i-container {
+    display: none;
+}
+
+
+.left>figure>img {
+    width: 50px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.trackbar,
+.volumebar {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.right .track {
+    width: 80%;
+}
+
+.music-commands {
+    display: flex;
+    gap: 20px;
+    font-size: 0.8rem;
+
+}
+
+.music-commands>a {
+    color: white;
+}
+
+.fa-circle-play {
+    font-size: 1.2rem;
+}
+
+
+
+
+/* -----trackbar/volumebar---- */
+.track {
+    appearance: none;
+    width: 100px;
+    height: 7px;
+    border-radius: 9999px;
+    background: #787b7f;
+}
+
+.track::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background: var(--color3);
+}
+
+
+
+
+
+
+
+
+/* ----BONUS----- 
     :hover su linktree e sidebar con border --color3 e color white!!!
     :hover ingrandimento bottone UPGRADE
-    :hover ::after conopacity e position absolute transform: traslate (-50%, -50%);
+    :hover ::after con opacity e position absolute transform: traslate (-50%, -50%);
     del playbutton su sfondo opaco in z-index: 1;
     :hover cambio colore barra avanzamento track 
     (<input type="range" name="track" min="0.00" max="3.49">)
     */
-}
