@@ -13,10 +13,10 @@
 
     <title>Spotify</title>
 
-    <!-- link css -->
+    <!-- link css sempre meglio in questo ordine [reset/debug/style] -->
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="./css/debug.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
 
     <!------ RESPONSIVE LINKS ------>
 
@@ -50,7 +50,7 @@
                         </figure>
                     </li>
                     <li><a class="align" href="#"><img src="./img/home.svg" alt="">
-                            <div class="hidden white"> Home </div>
+                            <div class="hidden"> Home </div>
                         </a></li>
                     <li><a class="align" href="#"> <img src="./img/search.svg" alt="">
                             <div class="hidden">Search</div>
@@ -60,34 +60,37 @@
                                 libreria</div>
                         </a></li>
 
-
-                    <ul class="playlist hidden">
-                        <li class="hidden white">PLAYLIST</li>
-                        <li class="hidden">
-                            <div class="align">
-                                <a class="square grey align" href="#">
-                                    <i class="fa-solid fa-plus"></i>
-                                </a>
-                                <span>Crea Playlist</span>
-                            </div>
-                        </li class="hidden">
-                        <li class="hidden"><a href="#">Nuova Playlist</a></li>
-                        <li class="hidden"><a href="#">Nuova Playlist</a></li>
-                        <li class="hidden"><a href="#">Nuova Playlist</a></li>
-                        <li class="hidden"><a href="#">Nuova Playlist</a></li>
-                        <li class="hidden"><a href="#">Nuova Playlist</a></li>
-                        <li class="hidden"><a href="#">Nuova Playlist</a></li>
-                    </ul>
+                    <li class="hidden">
+                        <ul class="playlist">
+                            <li><a id="playlist-title" href="#">PLAYLIST</a></li>
+                            <li>
+                                <div class="align">
+                                    <a class="square grey align" href="#">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                    <span>Crea Playlist</span>
+                                </div>
+                            </li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                            <li><a href="#">Nuova Playlist</a></li>
+                        </ul>
+                    </li>
 
                 </ul>
 
                 <div class="sidefooter">
-                    <div class="align self-a"><img src="./img/download.svg" alt=""> <span class="hidden">Installa
+                    <div class="align self-a"><a href=""><img src="./img/download.svg" alt=""></a> <span
+                            class="hidden">Installa
                             app</span>
                     </div>
                     <hr class="hidden ">
                     <div class="align self-a">
-                        <figure><img class="profile rounded grey " src="./img/profile.svg" alt=""></figure>
+                        <a href="#"><img class="rounded self-a " src="./img/Profile.png" alt="profile icon"></a>
+
                         <h3 class="white hidden"> <Strong>Giu Zac</Strong></h3>
                     </div>
                 </div>
@@ -112,18 +115,81 @@
                         <div><a href="#">scopri</a></div>
                     </div>
 
-                    <!-- row auto adattante delle card 300x300 img 100%width prova -->
-                    <div class="recentlyplayed">
+                    <!-- row auto adattante delle card 300x300 img 100% width prova -->
+                    <div class="rowcontainer">
 
+                        <h2>Recently Played</h2>
+                        <div class="recentlyplayed">
+
+                            <div class="card">
+                                <img class="rounded" src="./img/I'm-Into-you-Chet-Faker.png" alt="">
+                                <h4>Im Into You</h4>
+                                <p>Chet Faker</p>
+                            </div>
+                            <div class="card">
+                                <img class="rounded" src="./img/Cosi-Stupidi- Ernia.png" alt="">
+                                <h4>Così Stupid</h4>
+                                <p>Ernia</p>
+                            </div>
+                            <div class="card">
+                                <img src="./img/DAMN.-Kendrick-Lamar.png" alt="">
+                                <h4>DAMN.</h4>
+                                <p>Kendrick Lamar</p>
+                            </div>
+
+                            <div class="card">
+                                <img class="rounded" src="./img/stranger.jpeg" alt="">
+                                <h4>Stranger Things Original Soundtrack
+                                </h4>
+                                <p>Kyle Dixon & Michael Stein</p>
+                            </div>
+                            <div class="card">
+                                <img src="./img/LoFi&Code-Playlist.png" alt="">
+                                <h4>LoFi&Code</h4>
+                                <p>Playlist</p>
+                            </div>
+                            <div class="card">
+                                <img src="./img/sms-alla-madonna-di-vizi-di-forma-e-virtù.png" alt="">
+                                <h4>Sms alla Madonna</h4>
+                                <p>Dargen D'Amico</p>
+                            </div>
+
+                        </div>
                     </div>
 
+
                     <!-- musica suggerita -->
+                    <h2>Creato per Giu Zac</h2>
+                    <p>Piu ascolti, piu accurati saranno i suggerimenti</p>
                     <div class="suggested">
+
+                        <div class="card">
+                            <img src="./img/mixdaily.jpeg" alt="">
+                            <h4>MixDaily 1</h4>
+                        </div>
+
+                        <div class="card">
+                            <img src="./img/radar.jpeg" alt="">
+                            <h4>Release Radar</h4>
+                        </div>
 
                     </div>
 
                     <!-- artisti popolari del momento -->
+                    <h2>Artisti più popolari</h2>
+                    <p>Piu ascolti, piu accurati saranno i suggerimenti</p>
                     <div class="popular">
+                        <div class="card">
+                            <img src="./img/einaudi.jpeg" alt="">
+                            <p> Ludovico Einaudi</p>
+                        </div>
+
+                        <div class="card">
+                            <img class="rounded" src="./img/youg.jpeg" alt="">
+                            <p>Lana Del Rey</p>
+                        </div>
+
+
 
                     </div>
 

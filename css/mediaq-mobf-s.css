@@ -5,6 +5,7 @@
 
     }
 
+    /* in alternativa funziona anche [alt$="parole contenuta"] */
     img[alt="Small Logo"] {
         display: none;
     }
@@ -19,6 +20,13 @@
         padding-left: 2%;
     }
 
+    ul.playlist {
+        display: flex;
+        flex-direction: column;
+        gap: .9rem;
+        font-size: smaller;
+    }
+
     .self-a {
         align-self: flex-start;
     }
@@ -30,6 +38,7 @@
     .pill {
         font-size: small;
     }
+
 
 
 

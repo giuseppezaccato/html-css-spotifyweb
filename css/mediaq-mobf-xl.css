@@ -1,12 +1,16 @@
 @media screen and (min-width: 1024px) {
 
     .sidebar {
-        flex-basis: 25%;
+        flex-basis: 20%;
         font-size: 1.2rem;
     }
 
     .overflow {
-        flex-basis: 75%;
+        flex-basis: 80%;
+    }
+
+    .card {
+        max-width: calc(100% / 5);
     }
 
 
