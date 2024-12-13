@@ -43,9 +43,6 @@ body {
     font-size: xx-small;
 }
 
-.pill:hover {
-    scale: 1.1;
-}
 
 .square {
     width: 40px;
@@ -163,7 +160,7 @@ img[alt="profile icon"] {
 
 .linktree>div {
     /*non necessario dato che senza ottengo lo stesso risultato
- flex-basis: auto; */
+    flex-basis: auto; */
     padding: 0.6rem;
 }
 
@@ -184,26 +181,6 @@ img[alt="profile icon"] {
 
 .card figure {
     position: relative;
-}
-
-/* ---BONUS--- */
-figure>a {
-    font-size: 50px;
-    color: var(--color3);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    display: none;
-}
-
-.card:hover figure>img {
-    filter: brightness(0.4)
-}
-
-.card:hover figure>a {
-    display: block;
 }
 
 
@@ -233,8 +210,6 @@ h2 {
     justify-content: space-between;
 
 }
-
-
 
 .left,
 .center,
@@ -302,7 +277,10 @@ h2 {
     width: 100px;
     height: 7px;
     border-radius: 9999px;
-    background: #787b7f;
+    -webkit-transition: .2s;
+    background: linear-gradient(to right, #4CAF50 0%, #4CAF50 25%, #787b7f 75%, #787b7f 100%);
+    /* background-size: 100% 100%; */
+    opacity: 0.7;
 }
 
 .track::-webkit-slider-thumb {
@@ -312,20 +290,64 @@ h2 {
     height: 15px;
     border-radius: 20px;
     background: var(--color3);
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); */
 }
 
 
 
-
-
-
-
-
 /* ----BONUS----- 
-    :hover su linktree e sidebar con border --color3 e color white!!!
-    :hover ingrandimento bottone UPGRADE
-    :hover ::after con opacity e position absolute transform: traslate (-50%, -50%);
-    del playbutton su sfondo opaco in z-index: 1;
-    :hover cambio colore barra avanzamento track 
-    (<input type="range" name="track" min="0.00" max="3.49">)
-    */
+FATTO :hover su linktree e sidebar con border --color3 e color white!!!
+FATTO :hover ingrandimento bottone UPGRADE (scale)
+FATTO MA DIVERSO :hover ::after con opacity e position absolute transform: traslate (-50%, -50%); 
+del playbutton su sfondo opaco(ho usato brightness) in z-index: 1;
+FATTO :hover cambio colore barra avanzamento track 
+(<input type="range" name="track" min="0.00" max="3.49">)
+*/
+
+/* ---BONUS :hover albums--- */
+figure>a {
+    font-size: 50px;
+    color: var(--color3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+}
+
+.card:hover figure>img {
+    filter: brightness(0.4)
+}
+
+.card:hover figure>a {
+    display: block;
+}
+
+
+/* ---BONUS :hover GREEN BORDER + color white--- */
+
+li>a:hover,
+.playlist li:hover,
+.sidefooter>.align:hover {
+    color: white;
+    border-left: 3px solid var(--color3);
+    /* text-indent: +1%; */
+}
+
+.linktree>div>a:hover {
+    color: white;
+    border-bottom: 3px solid var(--color3);
+
+}
+
+/* ---BONUS :hover pill scale + color white--- */
+
+.pill>a:hover {
+
+    color: white;
+}
+
+.pill:hover {
+    scale: 1.1;
+}
