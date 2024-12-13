@@ -47,7 +47,6 @@
         display: flex;
         align-items: center;
         gap: 5px;
-
     }
 
     .i-container>a {
@@ -57,3 +56,4 @@
     .track {
         width: 200px;
     }
+}

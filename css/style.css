@@ -41,7 +41,10 @@ body {
     border-radius: 1.5rem;
     margin: 1rem;
     font-size: xx-small;
+}
 
+.pill:hover {
+    scale: 1.1;
 }
 
 .square {
@@ -171,12 +174,39 @@ img[alt="profile icon"] {
 .card {
     flex-basis: calc(100% / 2 - 10px);
     text-align: center;
+    text-transform: capitalize;
     font-size: 0.8rem;
 }
 
 .card img {
     width: 100%;
 }
+
+.card figure {
+    position: relative;
+}
+
+/* ---BONUS--- */
+figure>a {
+    font-size: 50px;
+    color: var(--color3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: none;
+}
+
+.card:hover figure>img {
+    filter: brightness(0.4)
+}
+
+.card:hover figure>a {
+    display: block;
+}
+
+
 
 .card h4,
 h2 {
@@ -212,7 +242,6 @@ h2 {
     display: flex;
     gap: 10px;
     align-items: center;
-    /* flex-basis: calc(100% / 3); */
 
 }
 
@@ -251,17 +280,17 @@ h2 {
 
 .music-commands {
     display: flex;
+    align-items: center;
     gap: 20px;
-    font-size: 0.8rem;
-
+    font-size: 0.7rem;
 }
 
 .music-commands>a {
     color: white;
 }
 
-.fa-circle-play {
-    font-size: 1.2rem;
+.music-commands .fa-circle-play {
+    font-size: 1.5rem;
 }
 
 
